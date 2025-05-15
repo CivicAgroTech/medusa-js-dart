@@ -4,11 +4,13 @@ part 'generated/admin_post_regions_region_payment_providers_req.g.dart';
 
 @JsonSerializable()
 class AdminPostRegionsRegionPaymentProvidersReq {
+  factory AdminPostRegionsRegionPaymentProvidersReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostRegionsRegionPaymentProvidersReqFromJson(json);
   AdminPostRegionsRegionPaymentProvidersReq({required this.providerId});
 
   String providerId;
 
-  factory AdminPostRegionsRegionPaymentProvidersReq.fromJson(Map<String, dynamic> json) => _$AdminPostRegionsRegionPaymentProvidersReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostRegionsRegionPaymentProvidersReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostRegionsRegionPaymentProvidersReqToJson(this);
 }

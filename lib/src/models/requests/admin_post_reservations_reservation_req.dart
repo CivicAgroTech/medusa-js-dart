@@ -4,6 +4,9 @@ part 'generated/admin_post_reservations_reservation_req.g.dart';
 
 @JsonSerializable()
 class AdminPostReservationsReservationReq {
+  factory AdminPostReservationsReservationReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostReservationsReservationReqFromJson(json);
   AdminPostReservationsReservationReq({
     this.locationId,
     this.quantity,
@@ -19,7 +22,6 @@ class AdminPostReservationsReservationReq {
 
   Map<String, dynamic>? metadata;
 
-  factory AdminPostReservationsReservationReq.fromJson(Map<String, dynamic> json) => _$AdminPostReservationsReservationReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostReservationsReservationReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostReservationsReservationReqToJson(this);
 }

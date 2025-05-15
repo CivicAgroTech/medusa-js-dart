@@ -5,13 +5,15 @@ part 'generated/admin_get_regions_region_fulfillment_options_res.g.dart';
 
 @JsonSerializable()
 class AdminGetRegionsRegionFulfillmentOptionsRes {
+  factory AdminGetRegionsRegionFulfillmentOptionsRes.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminGetRegionsRegionFulfillmentOptionsResFromJson(json);
   AdminGetRegionsRegionFulfillmentOptionsRes({
     required this.fulfillmentOptions,
   });
 
   List<FulfillmentOption> fulfillmentOptions;
 
-  factory AdminGetRegionsRegionFulfillmentOptionsRes.fromJson(Map<String, dynamic> json) => _$AdminGetRegionsRegionFulfillmentOptionsResFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminGetRegionsRegionFulfillmentOptionsResToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminGetRegionsRegionFulfillmentOptionsResToJson(this);
 }

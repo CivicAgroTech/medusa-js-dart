@@ -7,6 +7,9 @@ part 'generated/discount_condition_product_collection.g.dart';
 /// This represents the association between a discount condition and a product collection
 @JsonSerializable()
 class DiscountConditionProductCollection {
+  factory DiscountConditionProductCollection.fromJson(
+          Map<String, dynamic> json) =>
+      _$DiscountConditionProductCollectionFromJson(json);
   DiscountConditionProductCollection({
     required this.productCollectionId,
     required this.conditionId,
@@ -38,7 +41,6 @@ class DiscountConditionProductCollection {
   /// An optional key-value map with additional details
   final Map<String, dynamic>? metadata;
 
-  factory DiscountConditionProductCollection.fromJson(Map<String, dynamic> json) => _$DiscountConditionProductCollectionFromJson(json);
-
-  Map<String, dynamic> toJson() => _$DiscountConditionProductCollectionToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$DiscountConditionProductCollectionToJson(this);
 }

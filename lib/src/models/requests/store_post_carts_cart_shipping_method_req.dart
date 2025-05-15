@@ -4,6 +4,9 @@ part 'generated/store_post_carts_cart_shipping_method_req.g.dart';
 
 @JsonSerializable()
 class StorePostCartsCartShippingMethodReq {
+  factory StorePostCartsCartShippingMethodReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$StorePostCartsCartShippingMethodReqFromJson(json);
   StorePostCartsCartShippingMethodReq({
     required this.optionId,
     required this.data,
@@ -13,7 +16,6 @@ class StorePostCartsCartShippingMethodReq {
 
   Map<String, dynamic> data;
 
-  factory StorePostCartsCartShippingMethodReq.fromJson(Map<String, dynamic> json) => _$StorePostCartsCartShippingMethodReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$StorePostCartsCartShippingMethodReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$StorePostCartsCartShippingMethodReqToJson(this);
 }

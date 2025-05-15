@@ -4,6 +4,8 @@ part 'generated/admin_post_orders_order_shipment_req.g.dart';
 
 @JsonSerializable()
 class AdminPostOrdersOrderShipmentReq {
+  factory AdminPostOrdersOrderShipmentReq.fromJson(Map<String, dynamic> json) =>
+      _$AdminPostOrdersOrderShipmentReqFromJson(json);
   AdminPostOrdersOrderShipmentReq({
     required this.fulfillmentId,
     required this.trackingNumbers,
@@ -14,7 +16,6 @@ class AdminPostOrdersOrderShipmentReq {
   List<String> trackingNumbers;
   bool noNotification;
 
-  factory AdminPostOrdersOrderShipmentReq.fromJson(Map<String, dynamic> json) => _$AdminPostOrdersOrderShipmentReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostOrdersOrderShipmentReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostOrdersOrderShipmentReqToJson(this);
 }

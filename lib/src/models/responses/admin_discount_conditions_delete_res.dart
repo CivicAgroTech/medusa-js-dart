@@ -6,6 +6,9 @@ part 'generated/admin_discount_conditions_delete_res.g.dart';
 
 @JsonSerializable()
 class AdminDiscountConditionsDeleteRes {
+  factory AdminDiscountConditionsDeleteRes.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminDiscountConditionsDeleteResFromJson(json);
   AdminDiscountConditionsDeleteRes({
     required this.id,
     required this.object,
@@ -18,7 +21,6 @@ class AdminDiscountConditionsDeleteRes {
   final bool deleted;
   final Discount discount;
 
-  factory AdminDiscountConditionsDeleteRes.fromJson(Map<String, dynamic> json) => _$AdminDiscountConditionsDeleteResFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminDiscountConditionsDeleteResToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminDiscountConditionsDeleteResToJson(this);
 }

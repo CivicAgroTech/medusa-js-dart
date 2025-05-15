@@ -4,6 +4,9 @@ part 'generated/admin_post_product_categories_category_params.g.dart';
 
 @JsonSerializable()
 class AdminPostProductCategoriesCategoryParams {
+  factory AdminPostProductCategoriesCategoryParams.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostProductCategoriesCategoryParamsFromJson(json);
   AdminPostProductCategoriesCategoryParams({
     required this.expand,
     required this.fields,
@@ -13,7 +16,6 @@ class AdminPostProductCategoriesCategoryParams {
 
   String fields;
 
-  factory AdminPostProductCategoriesCategoryParams.fromJson(Map<String, dynamic> json) => _$AdminPostProductCategoriesCategoryParamsFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostProductCategoriesCategoryParamsToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostProductCategoriesCategoryParamsToJson(this);
 }

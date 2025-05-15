@@ -7,6 +7,9 @@ part 'generated/admin_post_products_product_variants_variant_req.g.dart';
 
 @JsonSerializable()
 class AdminPostProductsProductVariantsVariantReq {
+  factory AdminPostProductsProductVariantsVariantReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostProductsProductVariantsVariantReqFromJson(json);
   AdminPostProductsProductVariantsVariantReq({
     this.title,
     this.sku,
@@ -49,7 +52,6 @@ class AdminPostProductsProductVariantsVariantReq {
   List<Price>? prices;
   List<ProductOptionValue>? options;
 
-  factory AdminPostProductsProductVariantsVariantReq.fromJson(Map<String, dynamic> json) => _$AdminPostProductsProductVariantsVariantReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostProductsProductVariantsVariantReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostProductsProductVariantsVariantReqToJson(this);
 }

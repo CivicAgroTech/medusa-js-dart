@@ -4,6 +4,9 @@ part 'generated/admin_delete_product_categories_category_products_batch_params.g
 
 @JsonSerializable()
 class AdminDeleteProductCategoriesCategoryProductsBatchParams {
+  factory AdminDeleteProductCategoriesCategoryProductsBatchParams.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminDeleteProductCategoriesCategoryProductsBatchParamsFromJson(json);
   AdminDeleteProductCategoriesCategoryProductsBatchParams({
     this.expand,
     this.fields,
@@ -12,7 +15,6 @@ class AdminDeleteProductCategoriesCategoryProductsBatchParams {
   final String? expand;
   final String? fields;
 
-  factory AdminDeleteProductCategoriesCategoryProductsBatchParams.fromJson(Map<String, dynamic> json) => _$AdminDeleteProductCategoriesCategoryProductsBatchParamsFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminDeleteProductCategoriesCategoryProductsBatchParamsToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminDeleteProductCategoriesCategoryProductsBatchParamsToJson(this);
 }

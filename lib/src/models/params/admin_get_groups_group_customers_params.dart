@@ -4,6 +4,9 @@ part 'generated/admin_get_groups_group_customers_params.g.dart';
 
 @JsonSerializable()
 class AdminGetGroupsGroupCustomersParams {
+  factory AdminGetGroupsGroupCustomersParams.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminGetGroupsGroupCustomersParamsFromJson(json);
   AdminGetGroupsGroupCustomersParams({
     this.limit,
     this.offset,
@@ -16,7 +19,6 @@ class AdminGetGroupsGroupCustomersParams {
   String? expand;
   String? q;
 
-  factory AdminGetGroupsGroupCustomersParams.fromJson(Map<String, dynamic> json) => _$AdminGetGroupsGroupCustomersParamsFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminGetGroupsGroupCustomersParamsToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminGetGroupsGroupCustomersParamsToJson(this);
 }

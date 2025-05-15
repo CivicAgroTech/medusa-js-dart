@@ -4,13 +4,15 @@ part 'generated/admin_post_discounts_discount_conditions_condition_batch_req.g.d
 
 @JsonSerializable()
 class AdminPostDiscountsDiscountConditionsConditionBatchReq {
+  factory AdminPostDiscountsDiscountConditionsConditionBatchReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostDiscountsDiscountConditionsConditionBatchReqFromJson(json);
   AdminPostDiscountsDiscountConditionsConditionBatchReq({
     required this.resources,
   });
 
   final List<String> resources;
 
-  factory AdminPostDiscountsDiscountConditionsConditionBatchReq.fromJson(Map<String, dynamic> json) => _$AdminPostDiscountsDiscountConditionsConditionBatchReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostDiscountsDiscountConditionsConditionBatchReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostDiscountsDiscountConditionsConditionBatchReqToJson(this);
 }

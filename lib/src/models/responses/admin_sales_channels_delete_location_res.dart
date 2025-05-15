@@ -4,6 +4,9 @@ part 'generated/admin_sales_channels_delete_location_res.g.dart';
 
 @JsonSerializable()
 class AdminSalesChannelsDeleteLocationRes {
+  factory AdminSalesChannelsDeleteLocationRes.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminSalesChannelsDeleteLocationResFromJson(json);
   AdminSalesChannelsDeleteLocationRes({
     required this.id,
     required this.object,
@@ -14,7 +17,6 @@ class AdminSalesChannelsDeleteLocationRes {
   String object;
   bool deleted;
 
-  factory AdminSalesChannelsDeleteLocationRes.fromJson(Map<String, dynamic> json) => _$AdminSalesChannelsDeleteLocationResFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminSalesChannelsDeleteLocationResToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminSalesChannelsDeleteLocationResToJson(this);
 }

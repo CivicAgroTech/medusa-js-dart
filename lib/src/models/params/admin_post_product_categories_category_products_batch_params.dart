@@ -4,6 +4,9 @@ part 'generated/admin_post_product_categories_category_products_batch_params.g.d
 
 @JsonSerializable()
 class AdminPostProductCategoriesCategoryProductsBatchParams {
+  factory AdminPostProductCategoriesCategoryProductsBatchParams.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostProductCategoriesCategoryProductsBatchParamsFromJson(json);
   AdminPostProductCategoriesCategoryProductsBatchParams({
     this.expand,
     this.fields,
@@ -12,7 +15,6 @@ class AdminPostProductCategoriesCategoryProductsBatchParams {
   String? expand;
   String? fields;
 
-  factory AdminPostProductCategoriesCategoryProductsBatchParams.fromJson(Map<String, dynamic> json) => _$AdminPostProductCategoriesCategoryProductsBatchParamsFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostProductCategoriesCategoryProductsBatchParamsToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostProductCategoriesCategoryProductsBatchParamsToJson(this);
 }

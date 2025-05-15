@@ -6,11 +6,13 @@ part 'generated/store_payment_collections_session_res.g.dart';
 
 @JsonSerializable()
 class StorePaymentCollectionsSessionRes {
+  factory StorePaymentCollectionsSessionRes.fromJson(
+          Map<String, dynamic> json) =>
+      _$StorePaymentCollectionsSessionResFromJson(json);
   StorePaymentCollectionsSessionRes({required this.paymentSession});
 
   PaymentSession paymentSession;
 
-  factory StorePaymentCollectionsSessionRes.fromJson(Map<String, dynamic> json) => _$StorePaymentCollectionsSessionResFromJson(json);
-
-  Map<String, dynamic> toJson() => _$StorePaymentCollectionsSessionResToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$StorePaymentCollectionsSessionResToJson(this);
 }

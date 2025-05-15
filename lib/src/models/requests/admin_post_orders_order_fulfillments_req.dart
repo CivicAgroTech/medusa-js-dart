@@ -6,6 +6,9 @@ part 'generated/admin_post_orders_order_fulfillments_req.g.dart';
 
 @JsonSerializable()
 class AdminPostOrdersOrderFulfillmentsReq {
+  factory AdminPostOrdersOrderFulfillmentsReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostOrdersOrderFulfillmentsReqFromJson(json);
   AdminPostOrdersOrderFulfillmentsReq(
     this.items,
     this.locationId,
@@ -18,7 +21,6 @@ class AdminPostOrdersOrderFulfillmentsReq {
   bool noNotification;
   Map<String, dynamic>? metadata;
 
-  factory AdminPostOrdersOrderFulfillmentsReq.fromJson(Map<String, dynamic> json) => _$AdminPostOrdersOrderFulfillmentsReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostOrdersOrderFulfillmentsReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostOrdersOrderFulfillmentsReqToJson(this);
 }

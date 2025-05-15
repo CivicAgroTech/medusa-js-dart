@@ -7,6 +7,9 @@ part 'generated/discount_condition_customer_group.g.dart';
 /// Associates a discount condition with a customer group
 @JsonSerializable()
 class DiscountConditionCustomerGroup {
+  factory DiscountConditionCustomerGroup.fromJson(Map<String, dynamic> json) =>
+      _$DiscountConditionCustomerGroupFromJson(json);
+
   /// Constructor
   DiscountConditionCustomerGroup({
     required this.customerGroupId,
@@ -38,8 +41,6 @@ class DiscountConditionCustomerGroup {
 
   /// An optional key-value map with additional details
   Map<String, dynamic>? metadata;
-
-  factory DiscountConditionCustomerGroup.fromJson(Map<String, dynamic> json) => _$DiscountConditionCustomerGroupFromJson(json);
 
   Map<String, dynamic> toJson() => _$DiscountConditionCustomerGroupToJson(this);
 }

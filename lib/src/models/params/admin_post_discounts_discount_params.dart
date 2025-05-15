@@ -4,6 +4,9 @@ part 'generated/admin_post_discounts_discount_params.g.dart';
 
 @JsonSerializable()
 class AdminPostDiscountsDiscountParams {
+  factory AdminPostDiscountsDiscountParams.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostDiscountsDiscountParamsFromJson(json);
   AdminPostDiscountsDiscountParams({
     required this.expand,
     required this.fields,
@@ -12,7 +15,6 @@ class AdminPostDiscountsDiscountParams {
   String expand;
   String fields;
 
-  factory AdminPostDiscountsDiscountParams.fromJson(Map<String, dynamic> json) => _$AdminPostDiscountsDiscountParamsFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostDiscountsDiscountParamsToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostDiscountsDiscountParamsToJson(this);
 }

@@ -4,6 +4,9 @@ part 'generated/admin_orders_order_line_item_reservation_req.g.dart';
 
 @JsonSerializable()
 class AdminOrdersOrderLineItemReservationReq {
+  factory AdminOrdersOrderLineItemReservationReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminOrdersOrderLineItemReservationReqFromJson(json);
   AdminOrdersOrderLineItemReservationReq({
     required this.locationId,
     required this.quantity,
@@ -12,7 +15,6 @@ class AdminOrdersOrderLineItemReservationReq {
   String locationId;
   int quantity;
 
-  factory AdminOrdersOrderLineItemReservationReq.fromJson(Map<String, dynamic> json) => _$AdminOrdersOrderLineItemReservationReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminOrdersOrderLineItemReservationReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminOrdersOrderLineItemReservationReqToJson(this);
 }

@@ -6,6 +6,8 @@ part 'generated/admin_get_products_variants_params.g.dart';
 
 @JsonSerializable()
 class AdminGetProductsVariantsParams {
+  factory AdminGetProductsVariantsParams.fromJson(Map<String, dynamic> json) =>
+      _$AdminGetProductsVariantsParamsFromJson(json);
   AdminGetProductsVariantsParams({
     this.id,
     this.fields,
@@ -31,8 +33,6 @@ class AdminGetProductsVariantsParams {
   bool? allowBackorder;
   DateFilter? createdAt;
   DateFilter? updatedAt;
-
-  factory AdminGetProductsVariantsParams.fromJson(Map<String, dynamic> json) => _$AdminGetProductsVariantsParamsFromJson(json);
 
   Map<String, dynamic> toJson() => _$AdminGetProductsVariantsParamsToJson(this);
 }

@@ -4,6 +4,9 @@ part 'generated/admin_get_discounts_discount_code_params.g.dart';
 
 @JsonSerializable()
 class AdminGetDiscountsDiscountCodeParams {
+  factory AdminGetDiscountsDiscountCodeParams.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminGetDiscountsDiscountCodeParamsFromJson(json);
   AdminGetDiscountsDiscountCodeParams({
     required this.expand,
     required this.fields,
@@ -12,7 +15,6 @@ class AdminGetDiscountsDiscountCodeParams {
   String expand;
   String fields;
 
-  factory AdminGetDiscountsDiscountCodeParams.fromJson(Map<String, dynamic> json) => _$AdminGetDiscountsDiscountCodeParamsFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminGetDiscountsDiscountCodeParamsToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminGetDiscountsDiscountCodeParamsToJson(this);
 }

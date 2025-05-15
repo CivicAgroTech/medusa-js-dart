@@ -4,6 +4,9 @@ part 'generated/admin_post_orders_order_swaps_swap_fulfillments_req.g.dart';
 
 @JsonSerializable()
 class AdminPostOrdersOrderSwapsSwapFulfillmentsReq {
+  factory AdminPostOrdersOrderSwapsSwapFulfillmentsReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostOrdersOrderSwapsSwapFulfillmentsReqFromJson(json);
   AdminPostOrdersOrderSwapsSwapFulfillmentsReq({
     this.metadata,
     required this.noNotification,
@@ -14,7 +17,6 @@ class AdminPostOrdersOrderSwapsSwapFulfillmentsReq {
   bool noNotification;
   String locationId;
 
-  factory AdminPostOrdersOrderSwapsSwapFulfillmentsReq.fromJson(Map<String, dynamic> json) => _$AdminPostOrdersOrderSwapsSwapFulfillmentsReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostOrdersOrderSwapsSwapFulfillmentsReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostOrdersOrderSwapsSwapFulfillmentsReqToJson(this);
 }

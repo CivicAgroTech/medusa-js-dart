@@ -6,6 +6,9 @@ part 'generated/admin_post_price_list_prices_prices_req.g.dart';
 
 @JsonSerializable()
 class AdminPostPriceListPricesPricesReq {
+  factory AdminPostPriceListPricesPricesReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostPriceListPricesPricesReqFromJson(json);
   AdminPostPriceListPricesPricesReq({
     required this.prices,
     required this.override,
@@ -14,7 +17,6 @@ class AdminPostPriceListPricesPricesReq {
   final List<Price> prices;
   final bool override;
 
-  factory AdminPostPriceListPricesPricesReq.fromJson(Map<String, dynamic> json) => _$AdminPostPriceListPricesPricesReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostPriceListPricesPricesReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostPriceListPricesPricesReqToJson(this);
 }

@@ -4,6 +4,9 @@ part 'generated/admin_post_discounts_discount_conditions_condition_params.g.dart
 
 @JsonSerializable()
 class AdminPostDiscountsDiscountConditionsConditionParams {
+  factory AdminPostDiscountsDiscountConditionsConditionParams.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostDiscountsDiscountConditionsConditionParamsFromJson(json);
   AdminPostDiscountsDiscountConditionsConditionParams({
     this.expand,
     this.fields,
@@ -12,7 +15,6 @@ class AdminPostDiscountsDiscountConditionsConditionParams {
   String? expand;
   String? fields;
 
-  factory AdminPostDiscountsDiscountConditionsConditionParams.fromJson(Map<String, dynamic> json) => _$AdminPostDiscountsDiscountConditionsConditionParamsFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostDiscountsDiscountConditionsConditionParamsToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostDiscountsDiscountConditionsConditionParamsToJson(this);
 }

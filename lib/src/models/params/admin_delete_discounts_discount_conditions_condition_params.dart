@@ -4,6 +4,9 @@ part 'generated/admin_delete_discounts_discount_conditions_condition_params.g.da
 
 @JsonSerializable()
 class AdminDeleteDiscountsDiscountConditionsConditionParams {
+  factory AdminDeleteDiscountsDiscountConditionsConditionParams.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminDeleteDiscountsDiscountConditionsConditionParamsFromJson(json);
   AdminDeleteDiscountsDiscountConditionsConditionParams({
     this.expand,
     this.fields,
@@ -12,7 +15,6 @@ class AdminDeleteDiscountsDiscountConditionsConditionParams {
   String? expand;
   String? fields;
 
-  factory AdminDeleteDiscountsDiscountConditionsConditionParams.fromJson(Map<String, dynamic> json) => _$AdminDeleteDiscountsDiscountConditionsConditionParamsFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminDeleteDiscountsDiscountConditionsConditionParamsToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminDeleteDiscountsDiscountConditionsConditionParamsToJson(this);
 }

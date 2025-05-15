@@ -6,6 +6,8 @@ part 'generated/admin_post_orders_order_returns_req.g.dart';
 
 @JsonSerializable()
 class AdminPostOrdersOrderReturnsReq {
+  factory AdminPostOrdersOrderReturnsReq.fromJson(Map<String, dynamic> json) =>
+      _$AdminPostOrdersOrderReturnsReqFromJson(json);
   AdminPostOrdersOrderReturnsReq({
     required this.items,
     required this.returnShipping,
@@ -23,8 +25,6 @@ class AdminPostOrdersOrderReturnsReq {
   bool noNotification;
   double refund;
   String locationId;
-
-  factory AdminPostOrdersOrderReturnsReq.fromJson(Map<String, dynamic> json) => _$AdminPostOrdersOrderReturnsReqFromJson(json);
 
   Map<String, dynamic> toJson() => _$AdminPostOrdersOrderReturnsReqToJson(this);
 }

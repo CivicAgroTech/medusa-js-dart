@@ -4,6 +4,9 @@ part 'generated/admin_post_discounts_discount_conditions_condition_batch_params.
 
 @JsonSerializable()
 class AdminPostDiscountsDiscountConditionsConditionBatchParams {
+  factory AdminPostDiscountsDiscountConditionsConditionBatchParams.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostDiscountsDiscountConditionsConditionBatchParamsFromJson(json);
   AdminPostDiscountsDiscountConditionsConditionBatchParams({
     this.expand,
     this.fields,
@@ -12,7 +15,6 @@ class AdminPostDiscountsDiscountConditionsConditionBatchParams {
   String? expand;
   String? fields;
 
-  factory AdminPostDiscountsDiscountConditionsConditionBatchParams.fromJson(Map<String, dynamic> json) => _$AdminPostDiscountsDiscountConditionsConditionBatchParamsFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostDiscountsDiscountConditionsConditionBatchParamsToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostDiscountsDiscountConditionsConditionBatchParamsToJson(this);
 }

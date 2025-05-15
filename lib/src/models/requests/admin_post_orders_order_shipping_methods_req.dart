@@ -4,6 +4,9 @@ part 'generated/admin_post_orders_order_shipping_methods_req.g.dart';
 
 @JsonSerializable()
 class AdminPostOrdersOrderShippingMethodsReq {
+  factory AdminPostOrdersOrderShippingMethodsReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostOrdersOrderShippingMethodsReqFromJson(json);
   AdminPostOrdersOrderShippingMethodsReq({
     required this.price,
     required this.optionId,
@@ -14,7 +17,6 @@ class AdminPostOrdersOrderShippingMethodsReq {
   String optionId;
   Map<String, dynamic> data;
 
-  factory AdminPostOrdersOrderShippingMethodsReq.fromJson(Map<String, dynamic> json) => _$AdminPostOrdersOrderShippingMethodsReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostOrdersOrderShippingMethodsReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostOrdersOrderShippingMethodsReqToJson(this);
 }

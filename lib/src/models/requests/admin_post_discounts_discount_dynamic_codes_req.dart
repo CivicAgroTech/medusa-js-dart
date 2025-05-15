@@ -4,6 +4,9 @@ part 'generated/admin_post_discounts_discount_dynamic_codes_req.g.dart';
 
 @JsonSerializable()
 class AdminPostDiscountsDiscountDynamicCodesReq {
+  factory AdminPostDiscountsDiscountDynamicCodesReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostDiscountsDiscountDynamicCodesReqFromJson(json);
   AdminPostDiscountsDiscountDynamicCodesReq({
     required this.code,
     this.usageLimit,
@@ -19,7 +22,6 @@ class AdminPostDiscountsDiscountDynamicCodesReq {
   /// An optional set of key-value pairs to hold additional information.
   final Map<String, dynamic>? metadata;
 
-  factory AdminPostDiscountsDiscountDynamicCodesReq.fromJson(Map<String, dynamic> json) => _$AdminPostDiscountsDiscountDynamicCodesReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostDiscountsDiscountDynamicCodesReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostDiscountsDiscountDynamicCodesReqToJson(this);
 }

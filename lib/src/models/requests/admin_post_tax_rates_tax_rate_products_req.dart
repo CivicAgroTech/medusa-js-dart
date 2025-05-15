@@ -4,11 +4,13 @@ part 'generated/admin_post_tax_rates_tax_rate_products_req.g.dart';
 
 @JsonSerializable()
 class AdminPostTaxRatesTaxRateProductsReq {
+  factory AdminPostTaxRatesTaxRateProductsReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostTaxRatesTaxRateProductsReqFromJson(json);
   AdminPostTaxRatesTaxRateProductsReq({required this.products});
 
   List<String> products;
 
-  factory AdminPostTaxRatesTaxRateProductsReq.fromJson(Map<String, dynamic> json) => _$AdminPostTaxRatesTaxRateProductsReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostTaxRatesTaxRateProductsReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostTaxRatesTaxRateProductsReqToJson(this);
 }

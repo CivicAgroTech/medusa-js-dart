@@ -7,6 +7,9 @@ part 'generated/admin_post_orders_order_claims_claim_req.g.dart';
 
 @JsonSerializable()
 class AdminPostOrdersOrderClaimsClaimReq {
+  factory AdminPostOrdersOrderClaimsClaimReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostOrdersOrderClaimsClaimReqFromJson(json);
   AdminPostOrdersOrderClaimsClaimReq({
     required this.claimItems,
     required this.shippingMethods,
@@ -19,7 +22,6 @@ class AdminPostOrdersOrderClaimsClaimReq {
   bool noNotification;
   Map<String, dynamic>? metadata;
 
-  factory AdminPostOrdersOrderClaimsClaimReq.fromJson(Map<String, dynamic> json) => _$AdminPostOrdersOrderClaimsClaimReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostOrdersOrderClaimsClaimReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostOrdersOrderClaimsClaimReqToJson(this);
 }

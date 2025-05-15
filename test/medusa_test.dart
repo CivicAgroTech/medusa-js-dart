@@ -1,5 +1,5 @@
-import 'package:test/test.dart';
 import 'package:medusa_js_dart/medusa_js_dart.dart';
+import 'package:test/test.dart';
 
 void main() {
   group('Medusa', () {

@@ -6,6 +6,9 @@ part 'generated/admin_post_price_lists_price_list_price_list_req.g.dart';
 
 @JsonSerializable()
 class AdminPostPriceListsPriceListPriceListReq {
+  factory AdminPostPriceListsPriceListPriceListReq.fromJson(
+          Map<String, dynamic> json) =>
+      _$AdminPostPriceListsPriceListPriceListReqFromJson(json);
   AdminPostPriceListsPriceListPriceListReq({
     this.name,
     this.description,
@@ -28,7 +31,6 @@ class AdminPostPriceListsPriceListPriceListReq {
   List<String>? customerGroups;
   bool? includesTax;
 
-  factory AdminPostPriceListsPriceListPriceListReq.fromJson(Map<String, dynamic> json) => _$AdminPostPriceListsPriceListPriceListReqFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AdminPostPriceListsPriceListPriceListReqToJson(this);
+  Map<String, dynamic> toJson() =>
+      _$AdminPostPriceListsPriceListPriceListReqToJson(this);
 }
